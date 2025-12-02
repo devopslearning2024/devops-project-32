@@ -59,7 +59,7 @@ pipeline {
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                         
-                        sh "docker build -t image1 ."
+                        sh "docker build -t image -f JavaApp-CICD/bin/Dockerfile .
                         sh "docker tag image1 devopslearning/pet-clinic123:latest "
                         sh "docker push devopslearning/pet-clinic123:latest "
                     }
