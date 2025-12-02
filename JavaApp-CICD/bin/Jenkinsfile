@@ -14,7 +14,7 @@ pipeline {
         
         stage("Git Checkout"){
             steps{
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/devopslearning2024/devops-project-32.git'
+                git branch: 'master', changelog: false, poll: false, url: 'https://github.com/devopslearning2024/devops-project-32.git'
             }
         }
         
