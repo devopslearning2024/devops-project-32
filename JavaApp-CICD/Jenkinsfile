@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Checkout From Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/uniquesreedhar/JavaApp-CICD.git'
+                git branch: 'master', url: 'https://github.com/devopslearning2024/devops-project-32.git'
             }
         }
         stage('mvn compile'){
